@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Explorador de Algoritmos de Busca
 
-## Getting Started
+## Sobre o Projeto
 
-First, run the development server:
+O **Explorador de Algoritmos de Busca** é uma plataforma educacional interativa que demonstra diferentes algoritmos de busca aplicados ao problema do mapa da Romênia. A aplicação permite visualizar, comparar e entender como diferentes estratégias encontram caminhos entre cidades.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Objetivos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Fornecer uma ferramenta visual para aprendizado de algoritmos de busca
+- Permitir a comparação direta entre diferentes algoritmos
+- Apresentar métricas de desempenho para análise quantitativa
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Seleção de cidades de origem e destino
+- Escolha entre 8 algoritmos de busca
+- Visualização do caminho encontrado no mapa
+- Exibição de métricas de desempenho
+- Conteúdo educacional sobre teoria dos algoritmos
 
-## Learn More
+## Algoritmos Implementados
 
-To learn more about Next.js, take a look at the following resources:
+### Busca Não Informada (Cega)
+1. **Busca em Largura (BFS)**
+2. **Busca de Custo Uniforme (UCS)**
+3. **Busca em Profundidade (DFS)**
+4. **Busca em Profundidade Limitada (DLS)**
+5. **Busca de Aprofundamento Iterativo (IDS)**
+6. **Busca Bidirecional**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Busca Informada (Heurística)
+7. **Busca Gulosa**
+8. **Algoritmo A***
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Como Usar
 
-## Deploy on Vercel
+1. Selecione uma cidade de origem
+2. Selecione uma cidade de destino
+3. Escolha um algoritmo de busca
+4. Clique em "Encontrar Caminho"
+5. Visualize os resultados e métricas
+6. Navegue pelas abas para acessar conteúdo educacional
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Seções da Plataforma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Introdução**: Visão geral dos problemas de busca
+- **Base Teórica**: Conceitos e propriedades dos algoritmos
+- **Metodologia**: Implementação e representação do problema
+- **Resultados**: Visualização e análise dos resultados
+- **Conclusão**: Comparação dos algoritmos e insights
+
+## Tecnologias Utilizadas
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Canvas API
+
+## Estrutura do Projeto
