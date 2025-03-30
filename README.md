@@ -55,5 +55,3 @@ O **Explorador de Algoritmos de Busca** é uma plataforma educacional interativa
 - TypeScript
 - Tailwind CSS
 - Canvas API
-
-## Estrutura do Projeto

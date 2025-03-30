@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Algoritmos de Busca",
   description: "Explore e compare diferentes algoritmos de busca para encontrar caminhos entre cidades",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
