@@ -306,7 +306,6 @@ export function depthLimitedSearch(
 
   const startNode: Node = { state: start, parent: null, action: null, pathCost: 0, depth: 0 }
   const frontier: Node[] = [startNode]
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const explored = new Set<string>()
 
   while (frontier.length > 0) {
