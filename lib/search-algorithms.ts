@@ -306,6 +306,7 @@ export function depthLimitedSearch(
 
   const startNode: Node = { state: start, parent: null, action: null, pathCost: 0, depth: 0 }
   const frontier: Node[] = [startNode]
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const explored = new Set<string>()
 
   while (frontier.length > 0) {
@@ -391,7 +392,6 @@ export function iterativeDeepeningSearch(
   for (let depthLimit = 0; depthLimit < 100; depthLimit++) {
     const startNode: Node = { state: start, parent: null, action: null, pathCost: 0, depth: 0 }
     const frontier: Node[] = [startNode]
-    const explored = new Set<string>()
 
     let currentNodesExpanded = 0
     let currentNodesGenerated = 1
@@ -610,10 +610,12 @@ export function bidirectionalSearch(
     executionTime: endTime - startTime,
   }
 }
+
 function getHeuristic(state: string, goal: string): number {
   if (goal === "Bucharest") {
     return straightLineDistanceToBucharest[state] || 0
   }
+
   return 0
 }
 
@@ -778,7 +780,4 @@ export function aStarSearch(graph: Record<string, Record<string, number>>, start
   }
 }
 
-function getHeu(state: string, goal: string) {
-  throw new Error("Function not implemented.")
-}
 

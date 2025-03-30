@@ -23,10 +23,20 @@ import {
 } from "@/lib/search-algorithms"
 
 export default function SearchAlgorithmExplorer() {
+  type SearchResult = {
+    algorithm: string
+    path: string[]
+    distance: number
+    nodesExpanded: number
+    nodesGenerated: number
+    maxFrontierSize: number
+    executionTime: number
+  }
+
+  const [searchResults, setSearchResults] = useState<SearchResult | null>(null)
   const [startCity, setStartCity] = useState<string>("")
   const [endCity, setEndCity] = useState<string>("")
   const [currentTab, setCurrentTab] = useState("introduction")
-  const [searchResults, setSearchResults] = useState<any>(null)
   const [selectedAlgorithm, setSelectedAlgorithm] = useState<string>("")
 
   const runSearch = () => {
